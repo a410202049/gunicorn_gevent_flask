@@ -1,7 +1,7 @@
 version: '2'
 services:
   web_app:
-    build: ./Dockerfile
+    build: .
     restart: always
     command: gunicorn -c gunicorn.conf.py app:app
     ports:
