@@ -19,5 +19,6 @@ COPY . /src
 
 # create logs dir
 RUN mkdir /var/log/gunicorn_gevent_flask/
+RUN mkdir /var/log/gunicorn/
 
 WORKDIR /src
