@@ -4,7 +4,7 @@ import gevent.monkey
 gevent.monkey.patch_all()
 import multiprocessing
 
-bind = '127.0.0.1:5000'
+bind = '0.0.0.0:5000'
 backlog = 2048
 worker_class = "gevent"
 # debug = True
