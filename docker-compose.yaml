@@ -3,7 +3,7 @@ services:
   web_app:
     image: gunicorn_gevent_flask:latest
     restart: always
-    command: gunicorn -c gunicorn.conf.py app:app
+#    command: gunicorn -c gunicorn.conf.py app:app
     ports:
       - '5000:5000'
 #    volumes:
