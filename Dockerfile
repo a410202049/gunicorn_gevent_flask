@@ -22,3 +22,5 @@ RUN mkdir /var/log/gunicorn_gevent_flask/
 RUN mkdir /var/log/gunicorn/
 
 WORKDIR /src
+
+CMD ["gunicorn", "app:app", "-c", "./gunicorn.conf.py"]
