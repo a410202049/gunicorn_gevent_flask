@@ -18,7 +18,7 @@ RUN pip install -i https://pypi.douban.com/simple/ -r requirements.txt
 COPY . /src
 
 # create logs dir
-RUN mkdir /var/log/gunicorn_gevent_flask/
-RUN mkdir /var/log/gunicorn/
+#RUN mkdir /var/log/gunicorn_gevent_flask/
+#RUN mkdir /var/log/gunicorn/
 
 WORKDIR /src
